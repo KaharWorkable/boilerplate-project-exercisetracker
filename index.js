@@ -165,9 +165,9 @@ User.findById(idCheck)
           .then(data => {
             // handle saved document
             res.json({
-              '_id' : idCheck,
               'username' : data.username,
               'count' : data.count,
+              '_id' : idCheck,
               'log' : loggedArray
             });
           })
